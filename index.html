@@ -139,7 +139,7 @@
     <button class="btn-ghost" id="btnExport">导出备份</button>
     <button class="btn-ghost" id="btnImport">导入备份</button>
     <input type="file" id="fileImport" accept=".json,application/json" style="display:none">
-    <span class="hint">共 <b id="count">19</b> 条记录 <span style="color:#c9c8c3">· v12</span></span>
+    <span class="hint">共 <b id="count">19</b> 条记录 <span style="color:#c9c8c3">· v13</span></span>
   </div>
   <table>
     <thead>
@@ -154,292 +154,7 @@
         <th style="width:96px">操作</th>
       </tr>
     </thead>
-    <tbody id="tbody"><tr class="row" data-idx="0">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第1阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="0">JavaSE(上)</td>
-        <td><select class="status st-done" data-i="0">
-          <option>进行中</option><option>暂停中</option><option>未完成</option><option selected="">已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="0"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div><span class="progress-text">200/200</span></div></td>
-        <td><span class="cell-check" style="color:var(--green)">✅ 已完成（18天）</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="0">20天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="0" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="0" title="下移">▼</button>
-          <button class="btn-del" data-del="0" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="1">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第2阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="1">JavaSE(下)</td>
-        <td><select class="status st-done" data-i="1">
-          <option>进行中</option><option>暂停中</option><option>未完成</option><option selected="">已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="1"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div><span class="progress-text">200/200</span></div></td>
-        <td><span class="cell-check" style="color:var(--green)">✅ 已完成（9天）</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="1">15天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="1" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="1" title="下移">▼</button>
-          <button class="btn-del" data-del="1" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="2">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第3阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="2">Git</td>
-        <td><select class="status st-todo" data-i="2">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="2"><span class="progress-text">forever</span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="2">每天提交</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="2" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="2" title="下移">▼</button>
-          <button class="btn-del" data-del="2" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="3">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第4阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="3">MySQL（重点：事务/索引/EXPLAIN；MVCC听懂即可）</td>
-        <td><select class="status st-progress" data-i="3">
-          <option selected="">进行中</option><option>暂停中</option><option>未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="3"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:42%"></div></div><span class="progress-text">81/195</span></div></td>
-        <td><span class="cell-check">点击行打卡（3天）</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="3">7天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="3" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="3" title="下移">▼</button>
-          <button class="btn-del" data-del="3" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="4">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第5阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="4">JDBC（原生连接 + Druid 连接池）</td>
-        <td><select class="status st-todo" data-i="4">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="4"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="4">1天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="4" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="4" title="下移">▼</button>
-          <button class="btn-del" data-del="4" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="5">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第6阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="5">Javaweb（跳前端/JSP；HTTP/Servlet/Filter/Session → MyBatis）</td>
-        <td><select class="status st-todo" data-i="5">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="5"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="5">7-8天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="5" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="5" title="下移">▼</button>
-          <button class="btn-del" data-del="5" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="6">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第7阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="6">SSM（重注解轻XML；IOC/AOP/请求流转/动态SQL）</td>
-        <td><select class="status st-todo" data-i="6">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="6"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="6">7-10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="6" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="6" title="下移">▼</button>
-          <button class="btn-del" data-del="6" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="7">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第8阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="7">Linux 基础</td>
-        <td><select class="status st-todo" data-i="7">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="7"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="7">3天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="7" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="7" title="下移">▼</button>
-          <button class="btn-del" data-del="7" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="8">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第9阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="8">Spring Boot（自动装配/全局异常/拦截器）</td>
-        <td><select class="status st-todo" data-i="8">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="8"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="8">5天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="8" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="8" title="下移">▼</button>
-          <button class="btn-del" data-del="8" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="9">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第10阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="9">Maven</td>
-        <td><select class="status st-todo" data-i="9">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="9"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="9">2天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="9" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="9" title="下移">▼</button>
-          <button class="btn-del" data-del="9" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="10">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第11阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="10">苍穹外卖—&gt;宠物服务平台（沿用外卖骨架换皮：服务/预约/订单/Redis缓存；自研「宠物健康档案」）</td>
-        <td><select class="status st-todo" data-i="10">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="10"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="10">10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="10" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="10" title="下移">▼</button>
-          <button class="btn-del" data-del="10" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="11">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第12阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="11">并发（JUC）+JVM基础（线程池7参数/sync vs Lock/内存结构/GC）</td>
-        <td><select class="status st-todo" data-i="11">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="11"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="11">10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="11" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="11" title="下移">▼</button>
-          <button class="btn-del" data-del="11" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="12">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第13阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="12">redis + 黑马点评—&gt;高并发增强（缓存三问题/分布式锁；场景：秒杀驱虫套餐/疫苗次卡）</td>
-        <td><select class="status st-todo" data-i="12">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="12"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="12">10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="12" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="12" title="下移">▼</button>
-          <button class="btn-del" data-del="12" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="13">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第14阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="13">Spring AI/LangChain4j + RAG（宠物养护知识库客服：品种/疫苗/常见病问答）</td>
-        <td><select class="status st-todo" data-i="13">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="13"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="13">10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="13" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="13" title="下移">▼</button>
-          <button class="btn-del" data-del="13" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="14">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第15阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="14">Agent 工具调用（智能预约/改约/查单助手，Function Calling 调后端接口）</td>
-        <td><select class="status st-todo" data-i="14">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="14"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="14">10天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="14" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="14" title="下移">▼</button>
-          <button class="btn-del" data-del="14" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="15">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第16阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="15">Docker 部署上线（Compose 部署 Boot+MySQL+Redis）</td>
-        <td><select class="status st-todo" data-i="15">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="15"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="15">3-5天</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="15" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="15" title="下移">▼</button>
-          <button class="btn-del" data-del="15" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="16">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第17阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="16">hot100（每天3道，只做简单+中等）</td>
-        <td><select class="status st-todo" data-i="16">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="16"><div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div><span class="progress-text">0/100</span></div></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="16">长期</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="16" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="16" title="下移">▼</button>
-          <button class="btn-del" data-del="16" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="17">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第18阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="17">八股（结合项目里的坑背；面试前2个月集中）</td>
-        <td><select class="status st-todo" data-i="17">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="17"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="17">边学边记</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="17" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="17" title="下移">▼</button>
-          <button class="btn-del" data-del="17" title="删除此记录">✕</button>
-        </td>
-      </tr><tr class="row" data-idx="18">
-        <td class="drag-cell" title="按住拖动调整顺序">≡</td>
-        <td class="cell-stage">第19阶段</td>
-        <td class="cell-content" title="点击可编辑" data-field="content" data-i="18">日常实习投递（大二暑期~大三上~寒假，门槛低先入行）</td>
-        <td><select class="status st-todo" data-i="18">
-          <option>进行中</option><option>暂停中</option><option selected="">未完成</option><option>已完成</option>
-        </select></td>
-        <td class="cell-progress" title="点击可编辑，支持 0/100 或百分比" data-field="progress" data-i="18"><span class="progress-text"><span style="color:#c9c8c3">点击填写</span></span></td>
-        <td><span class="cell-check">—</span></td>
-        <td class="cell-date" title="点击可编辑" data-field="date" data-i="18">大三上</td>
-        <td class="ops-cell">
-          <button class="btn-move" data-move="up" data-i="18" title="上移">▲</button>
-          <button class="btn-move" data-move="down" data-i="18" title="下移">▼</button>
-          <button class="btn-del" data-del="18" title="删除此记录">✕</button>
-        </td>
-      </tr></tbody>
+    <tbody id="tbody"></tbody>
   </table>
 </div>
 
@@ -480,26 +195,27 @@
   const STATUSES = ["进行中","暂停中","未完成","已完成"];
   const ST_CLS = {"进行中":"st-progress","暂停中":"st-paused","未完成":"st-todo","已完成":"st-done"};
 
-  // 默认数据（18 个阶段，含前三阶段打卡记录）
+  // 默认数据（19 个阶段，含前三阶段打卡记录）
   const DEFAULT_DATA = [
     {stage:"第1阶段",  content:"JavaSE(上)", status:"已完成", progress:"200/200", date:"20天", checks:["2026-10-22","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-17","2026-10-18","2026-10-16","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-03"]},
     {stage:"第2阶段",  content:"JavaSE(下)", status:"已完成", progress:"200/200", date:"15天", checks:["2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12"]},
-    {stage:"第3阶段",  content:"MySQL（重点：事务/索引/EXPLAIN；MVCC听懂即可）", status:"进行中", progress:"81/195", date:"7天", checks:["2026-11-12","2026-11-13","2026-11-14"]},
-    {stage:"第4阶段",  content:"JDBC（原生连接 + Druid 连接池）", status:"未完成", progress:"", date:"1天", checks:[]},
-    {stage:"第5阶段",  content:"Javaweb（跳前端/JSP；HTTP/Servlet/Filter/Session → MyBatis）", status:"未完成", progress:"", date:"7-8天", checks:[]},
-    {stage:"第6阶段",  content:"SSM（重注解轻XML；IOC/AOP/请求流转/动态SQL）", status:"未完成", progress:"", date:"7-10天", checks:[]},
-    {stage:"第7阶段",  content:"Spring Boot（自动装配/全局异常/拦截器）", status:"未完成", progress:"", date:"5天", checks:[]},
-    {stage:"第8阶段",  content:"Git + Maven（随用随学，Git 现在起每天提交）", status:"未完成", progress:"", date:"2天", checks:[]},
-    {stage:"第9阶段",  content:"宠物服务平台（沿用外卖骨架换皮：服务/预约/订单/Redis缓存；自研「宠物健康档案」）", status:"未完成", progress:"", date:"10天", checks:[]},
-    {stage:"第10阶段", content:"并发+JVM基础（线程池7参数/sync vs Lock/内存结构/GC）", status:"未完成", progress:"", date:"10天", checks:[]},
-    {stage:"第11阶段", content:"高并发增强（缓存三问题/分布式锁；场景：秒杀驱虫套餐/疫苗次卡）", status:"未完成", progress:"", date:"10天", checks:[]},
-    {stage:"第12阶段", content:"Spring AI/LangChain4j + RAG（宠物养护知识库客服：品种/疫苗/常见病问答）", status:"未完成", progress:"", date:"10天", checks:[]},
-    {stage:"第13阶段", content:"Agent 工具调用（智能预约/改约/查单助手，Function Calling 调后端接口）", status:"未完成", progress:"", date:"10天", checks:[]},
-    {stage:"第14阶段", content:"Docker 部署上线（Compose 部署 Boot+MySQL+Redis）", status:"未完成", progress:"", date:"3-5天", checks:[]},
-    {stage:"第15阶段", content:"hot100（每天3道，只做简单+中等）", status:"未完成", progress:"0/100", date:"", checks:[]},
-    {stage:"第16阶段", content:"八股（结合项目里的坑背；面试前2个月集中）", status:"未完成", progress:"", date:"", checks:[]},
-    {stage:"第17阶段", content:"日常实习投递（大三上~寒假，门槛低先入行）", status:"未完成", progress:"", date:"大三上", checks:[]},
-    {stage:"第18阶段", content:"暑期实习春招冲刺（大三下 3-5 月）", status:"未完成", progress:"", date:"大三下", checks:[]}
+    {stage:"第3阶段",  content:"Git", status:"未完成", progress:"forever", date:"每天提交", checks:[]},
+    {stage:"第4阶段",  content:"MySQL（重点：事务/索引/EXPLAIN；MVCC听懂即可）", status:"进行中", progress:"81/195", date:"7天", checks:["2026-11-12","2026-11-13","2026-11-14"]},
+    {stage:"第5阶段",  content:"JDBC（原生连接 + Druid 连接池）", status:"未完成", progress:"", date:"1天", checks:[]},
+    {stage:"第6阶段",  content:"Javaweb（跳前端/JSP；HTTP/Servlet/Filter/Session → MyBatis）", status:"未完成", progress:"", date:"7-8天", checks:[]},
+    {stage:"第7阶段",  content:"SSM（重注解轻XML；IOC/AOP/请求流转/动态SQL）", status:"未完成", progress:"", date:"7-10天", checks:[]},
+    {stage:"第8阶段",  content:"Linux 基础", status:"未完成", progress:"", date:"3天", checks:[]},
+    {stage:"第9阶段",  content:"Spring Boot（自动装配/全局异常/拦截器）", status:"未完成", progress:"", date:"5天", checks:[]},
+    {stage:"第10阶段", content:"Maven", status:"未完成", progress:"", date:"2天", checks:[]},
+    {stage:"第11阶段", content:"苍穹外卖—>宠物服务平台（沿用外卖骨架换皮：服务/预约/订单/Redis缓存；自研「宠物健康档案」）", status:"未完成", progress:"", date:"10天", checks:[]},
+    {stage:"第12阶段", content:"并发（JUC）+JVM基础（线程池7参数/sync vs Lock/内存结构/GC）", status:"未完成", progress:"", date:"10天", checks:[]},
+    {stage:"第13阶段", content:"redis + 黑马点评—>高并发增强（缓存三问题/分布式锁；场景：秒杀驱虫套餐/疫苗次卡）", status:"未完成", progress:"", date:"10天", checks:[]},
+    {stage:"第14阶段", content:"Spring AI/LangChain4j + RAG（宠物养护知识库客服：品种/疫苗/常见病问答）", status:"未完成", progress:"", date:"10天", checks:[]},
+    {stage:"第15阶段", content:"Agent 工具调用（智能预约/改约/查单助手，Function Calling 调后端接口）", status:"未完成", progress:"", date:"10天", checks:[]},
+    {stage:"第16阶段", content:"Docker 部署上线（Compose 部署 Boot+MySQL+Redis）", status:"未完成", progress:"", date:"3-5天", checks:[]},
+    {stage:"第17阶段", content:"hot100（每天3道，只做简单+中等）", status:"未完成", progress:"0/100", date:"长期", checks:[]},
+    {stage:"第18阶段", content:"八股（结合项目里的坑背；面试前2个月集中）", status:"未完成", progress:"", date:"边学边记", checks:[]},
+    {stage:"第19阶段", content:"日常实习投递（大二暑期~大三上~寒假，门槛低先入行）", status:"未完成", progress:"", date:"大三上", checks:[]}
   ];
 
   let data = load();
@@ -512,15 +228,15 @@
       const s = localStorage.getItem(STORE_KEY);
       if(s){
         const d = JSON.parse(s);
-        // 判定是否为「新版 18 阶段」数据：第1阶段 content 为 "JavaSE(上)"
-        const isNew18 = Array.isArray(d) && d.length >= 18 &&
-          d[0] && (d[0].content||"").indexOf("JavaSE(上)") === 0;
+        // 判定是否为「最新 19 阶段」数据：第3阶段 content 为 "Git"（且长度 >= 19）
+        const isNew19 = Array.isArray(d) && d.length >= 19 &&
+          d[2] && (d[2].content||"").trim() === "Git";
         // 旧的初始数据（10 条、无任何打卡）→ 用新版数据覆盖
         const isOldDefault = Array.isArray(d) && d.length === 10 &&
           d.every(it => !it.checks || it.checks.length === 0) &&
           d.some(it => /^第[一二三四五六七八九十]+阶段$/.test(it.stage || ""));
-        // 旧版数据（内容为旧阶段名，如 "JavaSE" / "Mysql" 且非新18阶段）→ 升级为新版
-        const isOldContent = Array.isArray(d) && !isNew18 &&
+        // 旧版数据（内容为旧阶段名或旧 18 阶段结构，且非最新 19 阶段）→ 升级为最新版
+        const isOldContent = Array.isArray(d) && !isNew19 &&
           d.some(it => (it.content||"") === "JavaSE" || (it.content||"") === "Mysql" || (it.content||"").indexOf("Javaweb(web") === 0);
         if(isOldDefault || isOldContent){
           const fresh = JSON.parse(JSON.stringify(DEFAULT_DATA));
